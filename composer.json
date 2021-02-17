@@ -1,0 +1,37 @@
+{
+  "name": "kevind3v/brbunny",
+  "type": "project",
+  "description": "Miniframework PHP",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kevin Santos",
+      "email": "kevinsiqueira.dev@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    },
+    "files": [
+      "src/Config/App.php",
+      "src/Config/Config.php"
+    ]
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  },
+  "require": {
+    "php": "^7.2",
+    "coffeecode/router": "1.0.*",
+    "brbunny/brplates": "^1.0",
+    "vlucas/phpdotenv": "5.2.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  }
+}
