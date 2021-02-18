@@ -1,9 +1,17 @@
 <?php
 
-/** URL */
+/** ENVIRONMENT */
 
-define("BASE_URL", $_ENV['app.root']);
-define("DOMAIN", $_ENV['app.domain']);
+define("ENVIRONMENT", $_ENV['app.environment']);
+
+/** ABOUT */
+define("SITE", [
+    "name" => $_ENV['app.name'],
+    "description" => $_ENV['app.desc'],
+    "domain" => $_ENV['app.domain'],
+    "root" => $_ENV['app.root'],
+    "lang" => $_ENV['app.lang']
+]);
 
 /** Constant Date */
 define("DATE", [

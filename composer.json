@@ -16,8 +16,9 @@
       "App\\": "src/"
     },
     "files": [
-      "src/Config/App.php",
-      "src/Config/Config.php"
+      "src/Config/Bootstrap.php",
+      "src/Config/Config.php",
+      "src/Config/Helpers.php"
     ]
   },
   "scripts": {

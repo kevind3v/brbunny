@@ -8,8 +8,7 @@ if (!file_exists(dirname(__DIR__, 2) . "/.env")) {
 }
 Dotenv::createImmutable(dirname(__DIR__, 2))->load();
 
-
-if ($_ENV['ENVIRONMENT'] == "dev") {
+if ($_ENV['app.environment'] === "dev") {
     require __DIR__ . "/Boot/development.php";
 } else {
     require __DIR__ . "/Boot/production.php";

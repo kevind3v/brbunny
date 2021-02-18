@@ -1,6 +1,6 @@
 <?php
 
-namespace BrBunny\Core;
+namespace App\Core;
 
 use BrBunny\BrPlates\BrPlates;
 
@@ -13,5 +13,10 @@ class AppController
     {
         $this->view = new BrPlates(BRPLATES);
         $this->view->data(["router" => $router]);
+    }
+
+    public function error(array $data): void
+    {
+        var_dump($data);
     }
 }
