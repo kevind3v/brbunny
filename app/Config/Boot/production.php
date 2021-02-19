@@ -1,5 +1,3 @@
-ines (3 sloc)  141 Bytes
- 
 <?php
 
 ini_set('display_errors', '0');

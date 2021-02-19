@@ -1,0 +1,41 @@
+.f300 {
+    font-weight: 300;
+}
+.f400 {
+    font-weight: 400;
+}
+.fbold {
+    font-weight: bold;
+}
+.f600 {
+    font-weight: 600;
+}
+.f700 {
+    font-weight: 700;
+}
+.f800 {
+    font-weight: 800;
+}
+.f900 {
+    font-weight: 900;
+}
+.f300 {
+    font-weight: 300;
+}
+.header {
+    margin-top: 50px !important;
+}
+.wrap {
+    max-width: 100%;
+    padding: 2rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    position: relative;
+}
+h1 {
+    letter-spacing: 0.8;
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--primary);
+}

@@ -17,7 +17,7 @@ $route->namespace("App\Controllers");
 $route->group(null);
 $route->get("/", "Web::index", "web.home");
 
-/** Error */
+// /** Error */
 $route->group('/oops');
 $route->get("/{errcode}", "Web::error", "web.error");
 
