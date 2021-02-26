@@ -20,6 +20,14 @@ define("DATE", [
     "app" => "Y-m-d H:i:s"
 ]);
 
+/** Constant password */
+define("PASSWD", [
+    "min" => 8,
+    "max" => 40,
+    "algo" => PASSWORD_DEFAULT,
+    "option" => ["const" => 10]
+]);
+
 
 /** Constant template */
 define('VIEWS', [
